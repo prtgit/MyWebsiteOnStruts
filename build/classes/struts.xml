@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+   "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+   "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<package name="default"  namespace="/" extends="struts-default">
+		<action name="home" class="com.prashant.Manage">
+			<param name="actionName">HOME</param>
+			<result name="success">/jsp/home.jsp</result>
+		</action>
+		<action name="viewEducation" class="com.prashant.Manage">
+			<param name="actionName">VIEW_EDUCATION</param>
+			<result name="success">/jsp/view-education.jsp</result>
+		</action>
+		<action name="viewProjects" class="com.prashant.Manage">
+			<param name="actionName">VIEW_PROJECTS</param>
+			<result name="success">/jsp/view-projects.jsp</result>
+		</action>
+		<action name="viewResume" class="com.prashant.Manage">
+			<param name="actionName">VIEW_RESUME</param>
+			<result name="success">/jsp/view-resume.jsp</result>
+		</action>
+	</package>
+	
+
+</struts>
